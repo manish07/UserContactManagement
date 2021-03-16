@@ -1,0 +1,19 @@
+{
+  "FilePath": "c:\\Users\\kumarma\\Downloads\\MK\\CourseraDoc\\Keyboard shortcuts\\RapidD\\RapidD\\RapidD\\RapidD.Presentation.csproj",
+  "Configuration": {
+    "ConfigurationName": "UnsupportedRazor",
+    "LanguageVersion": "1.0",
+    "Extensions": [
+      {
+        "ExtensionName": "UnsupportedRazorExtension"
+      }
+    ]
+  },
+  "ProjectWorkspaceState": {
+    "TagHelpers": [],
+    "CSharpLanguageVersion": 703
+  },
+  "RootNamespace": null,
+  "Documents": [],
+  "SerializationFormat": "0.2"
+}

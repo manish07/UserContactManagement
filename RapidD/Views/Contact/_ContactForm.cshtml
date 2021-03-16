@@ -1,0 +1,54 @@
+﻿@model RapidD.Data.ContactModel
+
+@{
+    ViewBag.Title = "LogOut";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    .error-text-color {
+    color:red;
+    font-size:12px;
+}
+</style>
+@using (Html.BeginForm("saveContact", "contact", FormMethod.Post,
+            new
+            {
+                enctype = "multipart/form-data",
+                id = "newContactFormData",
+                name = "newContactFormData",
+            }))
+{
+    @Html.ValidationSummary(true)
+    @Html.HiddenFor(m => m.UserId)
+    @Html.HiddenFor(m => m.ContactId)
+    <div class="row">
+        <div class="col-xs-6 col-sm-6 col-md-6">
+            <div class="form-group">
+                @Html.TextBoxFor(m => m.FirstName, new { @class = "form-control input-sm", @placeholder = "First Name" })
+                <span class="error-text-color">@Html.ValidationMessageFor(m => m.FirstName)</span>    
+            </div>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-6">
+            <div class="form-group">
+                @Html.TextBoxFor(m => m.LastName, new { @class = "form-control input-sm", @placeholder = "Last Name" })
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.TextBoxFor(m => m.Email, new { @class = "form-control input-sm", @placeholder = "Email Address" })
+    </div>
+
+    <div class="form-group">
+        @Html.TextBoxFor(m => m.Mobile, new { @class = "form-control input-sm", @placeholder = "Mobile Number" })
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                @Html.TextAreaFor(m => m.Address, new { @class = "form-control input-sm", @maxlength = 200, @placeholder = "Please Enter Address" })
+            </div>
+        </div>
+    </div>
+
+    <input type="submit" value="Save" class="btn btn-info btn-block">
+
+}

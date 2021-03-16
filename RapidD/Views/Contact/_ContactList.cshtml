@@ -1,0 +1,43 @@
+﻿@model RapidD.Data.ContactModel
+
+<style>
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+</style>
+
+<table>
+    <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Email</th>
+        <th>Mobile</th>
+        <th>Address</th>
+        <th></th>
+        <th></th>
+    </tr>
+    @foreach (var item in Model.ContactCollection)
+    {
+    <tr>
+        <td>@item.FirstName</td>
+        <td>@item.LastName</td>
+        <td>@item.Email</td>
+        <td>@item.Mobile</td>
+        <td>@item.Address</td>
+        <td><button type="button" onclick="editContact(@item.ContactId)"><i class="fa fa-edit"></i></button></td>
+        <td><button type="button" onclick="deleteContact(@item.ContactId)"><i class="fa fa-trash-o"></i></button></td>
+    </tr>
+    }
+</table>

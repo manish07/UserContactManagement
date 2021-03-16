@@ -1,0 +1,42 @@
+﻿@model RapidD.Data.ContactModel
+
+<script>
+    function editContact(contactId) {
+        url = "/contact/EditContact?contactId=" + contactId
+        $.post(url, {}, function (data) {
+            $("#contactFormDiv").html(data);
+        });
+    }
+
+    function deleteContact(contactId) {
+        var userId = $("#UserId").val();
+        url = "/contact/DeleteContact?contactId=" + contactId + "&userId=" + userId
+        $.post(url, {}, function (data) {
+            $("#contactListId").html(data);
+        });
+    }
+
+</script>
+
+<div class="container">
+    <div class="row centered-form">
+        <div class="col-xs-12 col-sm-8 col-md-4 col-sm-offset-2 col-md-offset-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Create New Contacts<small>It's free!</small></h3>
+                </div>
+                <div class="panel-body" id="contactFormDiv">
+                    @Html.Partial("~/Views/Contact/_ContactForm.cshtml", Model)
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div id="contactListId">
+            @Html.Partial("~/Views/Contact/_ContactList.cshtml", Model)
+        </div>
+    </div>
+</div>

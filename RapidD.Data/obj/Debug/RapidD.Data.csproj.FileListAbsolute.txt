@@ -1,0 +1,5 @@
+E:\Work\WebApp\RapidD\RapidD.Data\bin\Debug\RapidD.Data.dll
+E:\Work\WebApp\RapidD\RapidD.Data\bin\Debug\RapidD.Data.pdb
+E:\Work\WebApp\RapidD\RapidD.Data\obj\Debug\RapidD.Data.csprojResolveAssemblyReference.cache
+E:\Work\WebApp\RapidD\RapidD.Data\obj\Debug\RapidD.Data.dll
+E:\Work\WebApp\RapidD\RapidD.Data\obj\Debug\RapidD.Data.pdb

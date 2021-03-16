@@ -1,0 +1,12 @@
+E:\Work\WebApp\RapidD\RapidD.Repository\bin\Debug\RapidD.Repository.dll
+E:\Work\WebApp\RapidD\RapidD.Repository\bin\Debug\RapidD.Repository.pdb
+E:\Work\WebApp\RapidD\RapidD.Repository\obj\Debug\RapidD.Repository.csprojResolveAssemblyReference.cache
+E:\Work\WebApp\RapidD\RapidD.Repository\obj\Debug\RapidD.Repository.dll
+E:\Work\WebApp\RapidD\RapidD.Repository\obj\Debug\RapidD.Repository.pdb
+E:\Work\WebApp\RapidD\RapidD.Repository\bin\Debug\RapidD.Repository.dll.config
+E:\Work\WebApp\RapidD\RapidD.Repository\bin\Debug\EntityFramework.dll
+E:\Work\WebApp\RapidD\RapidD.Repository\bin\Debug\EntityFramework.SqlServer.dll
+E:\Work\WebApp\RapidD\RapidD.Repository\bin\Debug\RapidD.DataAccess.dll
+E:\Work\WebApp\RapidD\RapidD.Repository\bin\Debug\RapidD.DataAccess.pdb
+E:\Work\WebApp\RapidD\RapidD.Repository\bin\Debug\EntityFramework.xml
+E:\Work\WebApp\RapidD\RapidD.Repository\bin\Debug\EntityFramework.SqlServer.xml
